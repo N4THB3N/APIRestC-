@@ -1,0 +1,5 @@
+USE master
+go
+
+IF NOT EXISTS(SELECT name FROM master.dbo.sysdatabases WHERE NAME = 'DBPRUEBAS')
+CREATE DATABASE DBPRUEBAS
